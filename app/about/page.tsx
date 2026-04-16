@@ -40,6 +40,7 @@ export default function AboutPage() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="bg-white/5 backdrop-blur-lg rounded-[3rem] border border-white/10 aspect-square flex items-center justify-center relative overflow-hidden group shadow-2xl">
             <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img 
               src="/juice_bottle.png" 
               alt="Premium Strawberry Juice Bottle"
