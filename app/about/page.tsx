@@ -27,7 +27,7 @@ export default function AboutPage() {
         <div className="animate-in fade-in slide-in-from-bottom-12 duration-1000">
           <span className="text-secondary tracking-[0.4em] uppercase text-xs font-bold mb-4 block">The Strawberry Story</span>
           <h1 className="text-5xl md:text-7xl font-extrabold uppercase tracking-widest text-white mb-8">
-            Nature's <span className="text-primary italic">Perfection</span>
+            Nature&apos;s <span className="text-primary italic">Perfection</span>
           </h1>
           <p className="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed font-light">
             We embarked on a journey to bottle the purest essence of nature without any compromises. No artificial additives, no refined sugars, just the raw elegance of meticulously cold-pressed strawberries.

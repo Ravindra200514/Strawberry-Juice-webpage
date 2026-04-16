@@ -5,7 +5,7 @@ import Link from "next/link";
 import ParticleBackground from "@/components/ParticleBackground";
 
 export default function TrackingPage({ params }: { params: { orderId: string } }) {
-  const [currentStep, setCurrentStep] = useState(1);
+  const [currentStep] = useState(1);
   const { orderId } = params;
 
   // The order logically starts at "Order Placed". Let it hold there statically.
@@ -42,9 +42,8 @@ export default function TrackingPage({ params }: { params: { orderId: string } }
         <div className="bg-black/40 backdrop-blur-md rounded-[2rem] p-8 md:p-12 border border-white/5 w-full shadow-2xl relative">
           
           <div className="space-y-12 relative before:absolute before:inset-0 before:ml-6 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-white/10 before:to-transparent">
-            {steps.map((step, index) => {
+            {steps.map((step) => {
               const isActive = currentStep >= step.id;
-              const isLast = index === steps.length - 1;
 
               return (
                 <div key={step.id} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">

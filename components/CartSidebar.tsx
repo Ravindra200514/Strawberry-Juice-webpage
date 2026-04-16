@@ -2,7 +2,6 @@
 
 import React from "react";
 import { useCart } from "@/lib/CartContext";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 export default function CartSidebar() {

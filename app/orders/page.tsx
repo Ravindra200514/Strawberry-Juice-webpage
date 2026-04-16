@@ -35,7 +35,7 @@ export default function OrdersPage() {
             <div className="bg-black/40 backdrop-blur-md rounded-[2rem] p-12 border border-white/5 shadow-2xl flex flex-col items-center text-center">
               <svg className="w-16 h-16 text-gray-600 mb-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
               <h2 className="text-xl font-bold tracking-widest uppercase text-white mb-2">No Orders Yet</h2>
-              <p className="text-gray-500 mb-8 font-light">You haven't placed any orders during this session.</p>
+              <p className="text-gray-500 mb-8 font-light">You haven&apos;t placed any orders during this session.</p>
               <Link href="/#shop" className="bg-primary text-background font-bold text-sm px-8 py-3 rounded-full uppercase tracking-widest hover-glow shadow-[0_0_20px_rgba(255,23,68,0.3)] hover:scale-105 active:scale-95 transition-all">
                 Shop Now
               </Link>
