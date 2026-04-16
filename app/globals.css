@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #050505;
+  --foreground: #ffffff;
+  --primary-accent: #FF1744;
+  --secondary-accent: #FF6B9D;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Utilities for glowing text */
+.text-glow {
+  text-shadow: 0 0 20px rgba(255, 23, 68, 0.4), 0 0 40px rgba(255, 23, 68, 0.2);
+}
+
+/* Soft glowing pink shadow effect */
+.hover-glow {
+  transition: all 0.3s ease;
+}
+.hover-glow:hover {
+  box-shadow: 0 0 25px rgba(255, 23, 68, 0.5);
+  transform: scale(1.05);
+}
+
+/* Background orb effect */
+.glow-orb {
+  background: radial-gradient(circle, rgba(255, 23, 68, 0.15) 0%, rgba(5, 5, 5, 0) 70%);
+  filter: blur(40px);
+}
+
+/* Float animation for particles */
+@keyframes float {
+  0% {
+    transform: translateY(110vh) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.3;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-10vh) translateX(20px);
+    opacity: 0;
+  }
+}
